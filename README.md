@@ -1,0 +1,2 @@
+# mago-bolla
+Structure repo
