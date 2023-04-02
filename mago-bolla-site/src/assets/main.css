@@ -1,2 +1,67 @@
 @import './base.css';
 
+
+/*Header*/
+.home {
+    background-image: url(/public/img/bollascen2_71.png);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.curriculum {
+    background-image: url(/public/img/7222931_orig.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.fotoevideo {
+    background-image: url(/public/img/bolla_zombie.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.blog {
+    background-image: url(/public/img/spettacolobambini.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.title_white {
+    font-weight: 800;
+    color: white;
+}
+
+.logo {
+    width: 18rem;
+    border-radius: 50%;
+}
+.ms_menu {
+    font-weight: 450;
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+}
+/*Main*/
+.bord_img {
+    border-radius: 20px;
+    margin: 4rem auto;
+}
+.home_img {
+    width: 100%;
+    height: 700px;
+} 
+.big-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: rgb(48, 1, 92);
+}
+/*Footer*/
+footer {
+    color: white;
+}
+
+
+
