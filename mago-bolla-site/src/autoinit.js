@@ -1,9 +1,8 @@
 import M from 'materialize-css'
+M.AutoInit();
 
-export default {
-        mounted () {
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit();
-        });
-    }
-}
+
+  
+
+
+    

@@ -1,67 +1,228 @@
 @import './base.css';
 
 
-/*Header*/
+/*HEADER*/
 .home {
     background-image: url(/public/img/bollascen2_71.png);
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
 }
 
 .curriculum {
-    background-image: url(/public/img/7222931_orig.jpg);
+    background-image: url(/public/img/bollazombieGrad71.jpg);
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
 }
 
 .fotoevideo {
-    background-image: url(/public/img/bolla_zombie.jpg);
+    background-image: url(/public/img/DSC_1039.JPG);
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
 }
 
 .blog {
-    background-image: url(/public/img/spettacolobambini.jpg);
+    background-image: url(/public/img/blogmagobolla.jpeg);
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
 }
-
+.logobolla {
+    width: 12.5rem;
+    border-radius: 50%;
+}
 .title_white {
     font-weight: 800;
     color: white;
 }
-
-.logo {
-    width: 18rem;
-    border-radius: 50%;
-}
 .ms_menu {
     font-weight: 450;
     font-size: 1.75rem;
-    margin-top: 1.75rem;
+    margin-top: 4.5rem;
 }
-/*Main*/
+/*Neon menu*/
+.neon-menu {
+  font-weight: bold;
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  .neon-menu:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+  
+  /*glow for webkit*/
+  
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+    }
+  }
+  
+  /*glow for mozilla*/
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+    }
+  }
+  
+  /*glow*/
+  
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+    }
+  }
+/*MAIN*/
+main p {
+    font-size: 20px;
+}
+.white_text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  transform: translateY(-20px);
+  transition: all 0.2s ease-in-out;
+}
 .bord_img {
     border-radius: 20px;
-    margin: 4rem auto;
 }
 .home_img {
-    width: 100%;
-    height: 700px;
+  width: 300px;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.card_home {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 80%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.card_home:hover {
+  opacity: 1;
+}
+.card_home:hover, .white_text {
+  transform: translateY(0);
 } 
 .big-title {
     font-size: 5rem;
-    text-transform: uppercase;
-    color: rgb(48, 1, 92);
 }
-/*Footer*/
+/*BLOG*/
+.blog_img {
+  width: 100%;
+  height: auto;
+}
+/*FOOTER*/
 footer {
     color: white;
+    padding: 2rem;
 }
+.logo {
+    width: 15rem;
+    border-radius: 50%;
+}
+.foot_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+
+  .logobolla {
+    width: 8rem;
+  }
+
+  .ms_hide {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 400px){
+
+  .logobolla {
+    width: 7rem;
+  }
+
+  .card_home {
+    opacity: 0;
+  }
+  
+}
+
+
+
 
 
 

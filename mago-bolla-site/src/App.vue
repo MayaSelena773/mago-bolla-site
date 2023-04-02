@@ -9,22 +9,20 @@ import { RouterLink, RouterView } from 'vue-router'
     <div>
         <!--HEADER-->
         <header :class="$route.name" class="mb_l">
-            <div class="padd_m flex_bet">
-                <div class="">
+            <div class="padd_s flex_bet">
+                <div>
                     <!--Logo-->
                     <router-link to="/">
-                        <span>
-                            <h1 class="title_white">MAGOBOLLA</h1>
-                        </span>
+                        <img class="logobolla" src="/public/img/magobolla.png" alt="bollaLogo">
                     </router-link>
                 </div> 
                 <!--Menu-->
-                <div class=""> 
+                <div class="ms_hide"> 
                     <ul class="ms_flex ms_menu">
-                        <li class="padd_left"><router-link to="/fotoevideo">FOTO E VIDEO</router-link></li>
-                        <li class="padd_left"><router-link to="/blog">BLOG</router-link></li>
-                        <li class="padd_left"><router-link to="/curriculum">CV</router-link></li>
-                        <li class="padd_left"><a href="#">CONTATTI</a></li>
+                        <li class="padd_lr neon-menu"><router-link to="/fotoevideo">FOTO E VIDEO</router-link></li>
+                        <li class="padd_lr neon-menu"><router-link to="/blog">BLOG</router-link></li>
+                        <li class="padd_lr neon-menu"><router-link to="/curriculum">CV</router-link></li>
+                        <li class="padd_lr neon-menu"><a href="#">CONTATTI</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,19 +34,34 @@ import { RouterLink, RouterView } from 'vue-router'
 
        <!--FOOTER-->
         <footer class="indigo">  
-            <div class="row flex_bet">
+            <div class="row">
                 <!--Logo footer-->
-                <div class="col s-6 center">
+                <div class="col s12 m4 center">
                     <img class="logo" src="/public/img/logoMagobolla.png" alt="logo.img">
                 </div>
                 <!--Links footer-->
-                <div class="col s-6"> 
-                    <div class="row"> 
-                        <div class="col s-4"><router-link to="/">Link</router-link></div>
-                        <div class="col s-4"><router-link to="/">Link</router-link></div>
-                        <div class="col s-4"><router-link to="/">Link</router-link></div>
-                        <div class="col s-4"><router-link to="/">Link</router-link></div>
-                    </div>
+                <div class="col s12 m4 center">
+                    <h6 class="foot_title">Social</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/baby.tirannosauro/">insta Baby-T</a>
+                        </li>
+                        <li>
+                            fb Stefano Magobolla
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@baby-t-stefanobono3537">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m4 center">
+                    <h6 class="foot_title">Contatti</h6>
+                    <ul>
+                        <li>
+                            <a href="mailto:magobolla@libero.it">magobolla@libero.it</a>
+                        </li>
+                        <li>347 713 1832</li>
+                    </ul>
                 </div>
             </div>
         </footer>

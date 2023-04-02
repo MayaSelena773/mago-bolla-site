@@ -14,9 +14,6 @@ ol, ul {
 }
 
 /*COMMON*/
-h1, h2, h3, h4, h5, h6, p, ol, ul {
-  color: #333;
-}
 h1 {
   font-size: 60px;
   line-height: 1;
@@ -83,7 +80,6 @@ a {
   color: white !important;
 }
 p {
-  font-size: 30px;
   line-height: 1.5;
 }
 .ms_container {
